@@ -1,0 +1,58 @@
+{
+ "home": {
+  "links": [
+   {
+    "x": 340.828125,
+    "y": 25.296875,
+    "w": 139.109375,
+    "h": 34.390625,
+    "t": "Documentation"
+   },
+   {
+    "x": 1354.75,
+    "y": 18.5,
+    "w": 121.25,
+    "h": 48,
+    "t": "Download"
+   },
+   {
+    "x": 661.578125,
+    "y": 493.8125,
+    "w": 192.828125,
+    "h": 48,
+    "t": "Download Now"
+   }
+  ],
+  "title": "Podman Desktop - Containers and Kubernetes | Podman Desktop",
+  "version": "",
+  "installer": ""
+ },
+ "downloads": {
+  "links": [
+   {
+    "x": 340.828125,
+    "y": 25.296875,
+    "w": 139.109375,
+    "h": 34.390625,
+    "t": "Documentation"
+   },
+   {
+    "x": 1354.75,
+    "y": 18.5,
+    "w": 121.25,
+    "h": 48,
+    "t": "Download"
+   },
+   {
+    "x": 1098,
+    "y": 270.390625,
+    "w": 208,
+    "h": 44.390625,
+    "t": "Download"
+   }
+  ],
+  "title": "Podman Desktop",
+  "version": "version v1.30.5",
+  "installer": "https://github.com/podman-desktop/podman-desktop/releases/download/v1.30.5/podman-desktop-1.30.5-setup-x64.exe"
+ }
+}

@@ -1,0 +1,12 @@
+{
+  "voice": "Microsoft Zira Desktop",
+  "segments": [
+    { "id": "s1", "start": 0.4,  "window": 6.4,  "text": "Set up your OpenFOAM simulation environment with Podman and Eddy3D in just a few steps." },
+    { "id": "s2", "start": 7.6,  "window": 11.8, "text": "First, download and install Podman Desktop, a free and open-source tool for managing containers." },
+    { "id": "s3", "start": 20.6, "window": 16.8, "text": "Complete the Podman setup and make sure the Podman machine is running. This provides the environment needed to execute OpenFOAM containers." },
+    { "id": "s4", "start": 38.5, "window": 12.0, "text": "Now open Rhino and Grasshopper. In Eddy3D, launch the engine setup interface." },
+    { "id": "s5", "start": 51.5, "window": 23.5, "text": "Eddy3D already provides the OpenFOAM container image through its installation interface. Simply pull the image, and Eddy3D handles the setup through Podman." },
+    { "id": "s6", "start": 76.3, "window": 8.4,  "text": "Once the image has been downloaded and verified, your OpenFOAM environment is ready for simulations through Eddy3D." },
+    { "id": "s7", "start": 85.3, "window": 4.4,  "text": "You're all set. Start exploring computational fluid dynamics with Eddy3D." }
+  ]
+}

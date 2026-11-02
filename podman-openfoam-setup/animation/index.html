@@ -1,0 +1,21 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Set Up OpenFOAM with Podman and Eddy3D</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<div id="viewport"><div id="stage"></div></div>
+<div id="ui">
+  <button id="play">Pause</button>
+  <input id="scrub" type="range" min="0" max="90" step="0.01" value="0">
+  <span id="clock">0.0 / 90 s</span>
+  <label><input id="voice" type="checkbox"> narration</label>
+  <audio id="aud" src="../narration/narration.wav" preload="auto"></audio>
+</div>
+<script src="data.js"></script>
+<script src="app.js"></script>
+</body>
+</html>

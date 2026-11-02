@@ -1,0 +1,28 @@
+<Project Sdk="Microsoft.NET.Sdk">
+  <!-- Throwaway harness (NOT part of the repo): hosts the real Setup.UI view against a staged catalog and
+       saves PNGs of the window. See .claude/rules/eto-library-ui.md -> "an Eto layout can be looked at without Rhino". -->
+  <PropertyGroup>
+    <OutputType>WinExe</OutputType>
+    <TargetFramework>net8.0-windows</TargetFramework>
+    <UseWPF>true</UseWPF>
+    <Nullable>disable</Nullable>
+    <ImplicitUsings>disable</ImplicitUsings>
+    <LangVersion>12</LangVersion>
+    <NoWarn>CA1416;NU1701;CS8632</NoWarn>
+    <RootNamespace>Shots</RootNamespace>
+    <AssemblyName>Shots</AssemblyName>
+    <ManagePackageVersionsCentrally>false</ManagePackageVersionsCentrally>
+  </PropertyGroup>
+  <PropertyGroup>
+    <!-- Path to a checkout of the Eddy3D repository: dotnet build Shots.csproj -p:Repo=<path> -->
+    <Repo Condition="'$(Repo)' == ''">../Eddy3D</Repo>
+  </PropertyGroup>
+  <ItemGroup>
+    <Compile Include="$(Repo)/Setup.UI/*.cs" Link="Shared/%(Filename)%(Extension)" />
+    <Compile Include="$(Repo)/GUI/ScreenFit.cs" Link="Shared/ScreenFit.cs" />
+    <EmbeddedResource Include="$(Repo)/Eddy3D.png" LogicalName="Eddy3D.png" />
+    <PackageReference Include="Eto.Forms" Version="2.10.2" />
+    <PackageReference Include="Eto.Platform.Wpf" Version="2.10.2" />
+    <ProjectReference Include="$(Repo)/Provisioning/Provisioning.csproj" />
+  </ItemGroup>
+</Project>
